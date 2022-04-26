@@ -32,7 +32,7 @@ Please center the inner div vertically without changing their dimensions and col
 
 ### Solution
 
-1. display grid
+1. display grid place-items
 
 ```css
 .outer {
