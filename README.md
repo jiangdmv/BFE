@@ -1,6 +1,6 @@
-I'm on my journey to improve my Front-End skills on [bigfrontend.dev](https://bigfrontend.dev).
+We are on our journey to improve Front-End skills on [bigfrontend.dev](https://bigfrontend.dev).
 
-Here I document solutions to problems that I solved.
+Here we document solutions to problems that we solved.
 
 - [JavaScript Coding Problems](/Coding-Problems/README.md)
 
