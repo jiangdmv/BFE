@@ -32,6 +32,28 @@ Please center the inner div vertically without changing their dimensions and col
 
 ### Solution
 
+1. display grid
+
+```css
+.outer {
+  width: 100%;
+  height: 100%;
+  background-color: #efefef;
+  display: grid;
+  place-items: center;
+}
+
+.inner {
+  width: 100px;
+  height: 100px;
+  background-color: #f44336;
+}
+```
+
+2. outer display flex
+
+// transform: translate so it moves back 50% of its height and width
+
 ```css
 .outer {
   width: 100%;
@@ -48,5 +70,31 @@ Please center the inner div vertically without changing their dimensions and col
   height: 100px;
   background-color: #f44336;
   /* your code here */
+}
+```
+
+3. position
+
+// position relative and absolute
+// transform: translate so it moves back 50% of its height and width
+
+```css
+.outer {
+  width: 100%;
+  height: 100%;
+  background-color: #efefef;
+  /* your code here */
+  position: relative;
+}
+
+.inner {
+  width: 100px;
+  height: 100px;
+  background-color: #f44336;
+  /* your code here */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 ```
