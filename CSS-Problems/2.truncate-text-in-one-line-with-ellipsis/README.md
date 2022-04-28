@@ -22,6 +22,9 @@ Truncate text in one line, if needed add ellipsis.
 
 ### Solution
 
+Only one solution here.
+https://www.w3schools.com/css/css_overflow.asp
+
 ```css
 .one-line {
   /* your code here */
