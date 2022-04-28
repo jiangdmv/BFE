@@ -24,7 +24,31 @@ Implement a basic two-column layout, in which left column takes up 25% width of 
 
 #
 
-### Solution 1
+### Solution 1 grid 
+grid-template-columns: minmax(100px, 25%) auto;
+
+```css
+.container {
+  height: 300px;
+  /* your code here */
+  display: grid;
+  grid-template-columns: minmax(100px, 25%) auto;
+}
+
+.left {
+  background-color: #f44336;
+  /* your code here */
+}
+
+.right {
+  background-color: #2973af;
+  /* your code here */
+}
+```
+
+
+
+### Solution 2 flex
 
 ```css
 .container {
@@ -49,7 +73,7 @@ Implement a basic two-column layout, in which left column takes up 25% width of 
 
 #
 
-### Solution 2
+### Solution 3 flex
 
 ```css
 .container {
