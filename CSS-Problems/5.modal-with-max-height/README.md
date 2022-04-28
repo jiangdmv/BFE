@@ -47,6 +47,7 @@ https://www.w3schools.com/cssref/css_units.asp
 
 ### Solution 1  height: 100vh
 
+```css
 .modals {
   display: grid;
   place-items: center;
@@ -70,7 +71,7 @@ https://www.w3schools.com/cssref/css_units.asp
   background-color: #2973af;
   height: 100%;
 }
-
+```
 
 
 ### Solution 2
