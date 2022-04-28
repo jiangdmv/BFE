@@ -45,7 +45,7 @@ The HTML structure is something like
 #
 https://www.w3schools.com/cssref/css_units.asp
 
-### Solution 1  height: 100vh
+### Solution 1  grid
 
 ```css
 .modals {
@@ -74,7 +74,7 @@ https://www.w3schools.com/cssref/css_units.asp
 ```
 
 
-### Solution 2
+### Solution 2 flex
 
 ```css
 .modals {
