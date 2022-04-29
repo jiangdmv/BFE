@@ -32,6 +32,8 @@ This rectangle should have the fixed ratio even when width changes.
 
 ### Solution 1
 
+https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio
+
 ```css
 .golden-ratio {
   background-color: #ccc;
