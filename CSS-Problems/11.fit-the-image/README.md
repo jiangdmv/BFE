@@ -48,6 +48,8 @@ Now in an HTML structure like below, please fit the image to the container div, 
 
 ### Solution
 
+https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio
+
 ```css
 .image {
   width: 100%;
