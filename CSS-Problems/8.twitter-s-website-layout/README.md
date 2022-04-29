@@ -64,7 +64,7 @@ It is a bit hard to explain clearly, but following screenshots might be easier t
 
 #
 
-### Solution
+### Solution 1
 
 ```css
 .container {
@@ -112,6 +112,70 @@ It is a bit hard to explain clearly, but following screenshots might be easier t
 @media (min-width: 460px) {
   .left {
     width: 80px;
+  }
+}
+```
+
+### Solution 2
+
+```css
+.container {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+}
+
+.left {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* Req 1: the left column is 40px by default */
+  min-width: 40px;
+  background-color: #eee;
+}
+
+.middle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ddd;
+  /* Req 2: Allow middle to grow until 240px */
+  width: 100%;
+  max-width: 240px;
+}
+.right {
+  background-color: #eee;
+  display: none;
+}
+
+
+@media screen and (max-width: 420px) {
+  .right: {
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 420px) {
+  /* Req 3: When there is enough space, the right container will come into view */
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Important property for determining when container should be shown */
+    min-width: 120px;
+  }
+
+  /* Req 5: set margins of the container */
+  .container {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  /* Req 4: allow the column to grow up to 80px */
+  .left {
+    flex-grow: 1;
+    max-width: 80px;
   }
 }
 ```
