@@ -42,7 +42,43 @@ A doughnut chart with 75%:
 
 #
 
-### Solution
+### Solution 1
+
+```css
+.piechart {
+  width: 100px;
+  height: 100px;
+  clip-path: circle(50px at center);
+  background-image: conic-gradient(#f44336 var(--percentage), transparent 0);
+  mask-image: radial-gradient(circle closest-side at center, transparent 80%, #fff 80%);
+}
+```
+
+### Solution 2
+
+```css
+.piechart{
+  width: 100px;
+  height: 100px;
+  background: conic-gradient( #f44336 var(--percentage), transparent var(--percentage));
+  border-radius: 50%;
+  position: relative;
+}
+
+.piechart::before{
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+```
+
+### Solution 3
 
 ```css
 .piechart {
