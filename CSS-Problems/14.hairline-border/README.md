@@ -24,6 +24,10 @@ Please add 0.5px top border of black for the following div.
 
 ### Solution
 
+About scale: https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform-function/scale()
+
+About transform-origin: https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform-origin
+
 ```css
 .hairline {
   width: 300px;

@@ -33,7 +33,7 @@ Suppose we have an `<a/>` tag which is stretched to multiple lines, add borders 
 
 #
 
-### Solution
+### Solution  box-decoration-break
 
 ```css
 .border {

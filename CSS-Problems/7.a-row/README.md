@@ -36,7 +36,27 @@ Please complete the CSS according to following requirements:
 
 #
 
-### Solution
+### Solution 1
+
+```css
+.row {
+  height: 50px;
+  background: #eee;
+  border-bottom: solid 1px #ccc;
+}
+
+/* Only the first child gets a top border */
+.row:nth-child(1) {
+ border-top: solid 1px #ccc;
+}
+
+.row:nth-child(even) {
+ background-color: #ddd;
+}
+```
+
+
+### Solution 2
 
 ```css
 :root {

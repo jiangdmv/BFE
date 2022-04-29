@@ -43,8 +43,38 @@ The HTML structure is something like
 <kbd>![result 4](result-4.png)</kbd>
 
 #
+https://www.w3schools.com/cssref/css_units.asp
 
-### Solution
+### Solution 1  grid
+
+```css
+.modals {
+  display: grid;
+  place-items: center;
+  padding: 30px 0;
+  height: 100vh;
+}
+
+.modal {
+  width: 300px;
+  height: 100%;
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.modal-header {
+  background-color: #f44336;
+  height: 50px;
+}
+
+.modal-body {
+  background-color: #2973af;
+  height: 100%;
+}
+```
+
+
+### Solution 2 flex
 
 ```css
 .modals {

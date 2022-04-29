@@ -34,7 +34,31 @@ Lines for the cross should have
 
 #
 
-### Solution
+### Solution 1
+
+```css
+.close {
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  position: relative;
+}
+
+.close::before, .close::after {
+  position: absolute;
+  height: 2px;
+  width: 75%;
+  background-color: #aaa;
+  content: '';
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+```
+
+
+### Solution 2
 
 ```css
 .close {

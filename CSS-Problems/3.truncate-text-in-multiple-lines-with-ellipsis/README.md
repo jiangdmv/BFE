@@ -30,6 +30,8 @@ Just like [2. truncate text in one line(with ellipsis)](https://bigfrontend.dev/
 
 ### Solution
 
+https://developer.mozilla.org/en-US/docs/Web/CSS/WebKit_Extensions
+
 ```css
 .max-three-lines {
   /* your code here */
