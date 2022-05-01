@@ -36,17 +36,19 @@ console.log(fetchQuestions());
 */
 
 // make the <div>
-function createCategory(catetory, questions) {
+function createCategory(category, questions) {
   const categoryDiv = document.createElement("div");
   categoryDiv.classList.add("category");
   const h2 = document.createElement("h2");
-  h2.textContent = categoryDiv;
-  questions.forEach((questions) => {
+  h2.textContent = category;
+  categoryDiv.append(h2);
+  questions.forEach((question) => {
     const questionDiv = document.createElement("div");
     questionDiv.classList.add("question");
     const h3 = document.createElement("h3");
-    h3.textContent = questions.name;
+    h3.textContent = question.name;
     questionDiv.append(h3);
+    categoryDiv.append(questionDiv);
   });
   return categoryDiv;
 }
