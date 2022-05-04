@@ -32,10 +32,6 @@ Please center the inner div vertically without changing their dimensions and col
 
 ### Solution
 
-CSS position relative vs absolute vs static:
-
-https://www.freecodecamp.org/news/css-positioning-position-absolute-and-relative/
-
 1. display grid place-items
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/place-items
@@ -115,12 +111,7 @@ align-items: center: items are centered in the cross-axis
 }
 ```
 
-4. Absolute positioning and margin: auto
-
-margin: auto; /_ top and bottom: 0 margin _/
-/_ Box is horizontally centered _/
-/_ left and right: 0 margin _/
-/_ Box is vertically centered _/
+1. Absolute positioning and margin: auto
 
 ```css
 .container {
@@ -142,3 +133,4 @@ margin: auto; /_ top and bottom: 0 margin _/
   margin: auto;
 }
 ```
+
